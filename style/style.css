@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background: rgb(255, 217, 199);
+  background-size: cover;
+  background-position: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  position: relative;
+  height: 100vh;
+  color: #444;
+}
+
+.wrapper {
+  width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(143, 164, 255);
+}
+
+
+
+.player1-panel,
+.player2-panel{
+  width: 50%;
+  float: left;
+  height: 800px;
+  padding: 40px;
+}
+
+
+.player1-name,
+.player2-name{
+  color: rgb(255, 184, 52);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+i.fa-dice{
+  color: rgb(236, 72, 72);
+  position: absolute;
+  left: -20px;
+}
+
+.player1-score,
+.player2-score{
+  text-align: center;
+  font-size: 100px;
+  font-weight: 100;
+  color: rgb(236, 72, 72);
+  margin-bottom: 130px;
+}
+
+.player1-current-score,
+.player2-current-score{
+  font-size: 40px;
+}
+
+.player1-current-box,
+.player2-current-box{
+  background-color: rgb(236, 72, 72);
+  width: 20%;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  box-shadow: 0px 15px 50px rgba(0,0,0,0.15);
+}
+
+.player1-winbox,
+.player2-winbox{
+  background-color: green;
+  width: 13%;
+  margin: 5px auto;
+  color: white;
+  
+  text-align: center;  
+}
+.wins1-title,
+.wins2-title{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.wins-1,
+.wins-2{
+  font-size: 30px;
+}
+
+.player1-current-label,
+.player2-current-label{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+
+button{
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  background: none;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.btn-newgame{
+  top: 75px;
+}
+.btn-newgame:hover{
+  color: rgb(236, 72, 72);
+}
+
+.btn-roll{top:770px;}
+.btn-roll:hover{color: rgb(236, 72, 72);}
+
+.btn-hold{top: 810px;}
+.btn-hold:hover{color: rgb(236, 72, 72);}
+
+.dice{
+  position: absolute;
+  left: 50%;
+  top: 460px;
+  transform: translateX(-50%);
+  height: 100px;
+  box-shadow: 5px 5px 20px;
+}
+
+/* store winners in an array
+update html with jquery to display winners score when clicking new game
+highscores title
+highscores box
+adds another box after each new high score
+ */
